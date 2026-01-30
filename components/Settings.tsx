@@ -169,7 +169,7 @@ const Settings: React.FC<SettingsProps> = ({ onReset, onExport, onImport, tiresC
       </div>
 
       <div className="pt-8 pb-4 text-center">
-        <p className="text-[9px] text-slate-300 font-bold uppercase tracking-[0.2em]">MotorField Inventory © 2025</p>
+        <p className="text-[9px] text-slate-300 font-bold uppercase tracking-[0.2em]">D&A BAN © 2025</p>
       </div>
     </div>
   );

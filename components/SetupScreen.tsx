@@ -34,7 +34,7 @@ const SetupScreen: React.FC<SetupScreenProps> = ({ onComplete }) => {
         </div>
 
         <div>
-          <h1 className="text-2xl font-black tracking-tight mb-2">MotorField Inventory</h1>
+          <h1 className="text-2xl font-black tracking-tight mb-2">D&A BAN</h1>
           <p className="text-slate-400 text-sm font-medium">Sistem Manajemen Toko Ban Offline</p>
         </div>
 

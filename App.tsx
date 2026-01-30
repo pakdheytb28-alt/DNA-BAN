@@ -140,13 +140,13 @@ const App: React.FC = () => {
       transactions,
       expenses,
       exportDate: new Date().toISOString(),
-      appName: 'BanStock'
+      appName: 'D&A BAN'
     };
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `banstock_backup_${new Date().toISOString().split('T')[0]}.json`;
+    link.download = `dnaban_backup_${new Date().toISOString().split('T')[0]}.json`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -262,7 +262,7 @@ const App: React.FC = () => {
         <div className="flex items-center gap-2.5" onClick={() => setView('DASHBOARD')}>
           <div className="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center text-white shadow-md"><Package size={18} /></div>
           <div>
-            <h1 className="text-md font-black text-slate-900 leading-none">MotorField</h1>
+            <h1 className="text-md font-black text-slate-900 leading-none">D&A BAN</h1>
             <p className="text-[8px] text-slate-400 font-bold uppercase tracking-widest mt-0.5">Ban & Inventory</p>
           </div>
         </div>
